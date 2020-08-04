@@ -1,0 +1,85 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#content {
+  width: 1000px;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.circle {
+  background-color: #91d6be;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: grab;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+}
+
+.circle:active {
+  cursor: grabbing;
+}
+
+[data-circle="1"] {
+  left: 0;
+  top: 0;
+}
+
+[data-circle="2"] {
+  left: 350px;
+  top: 0;
+}
+
+
+input {
+  padding: 7px 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.coordinate-input {
+  width: 40px;
+  margin: 5px;
+  background-color: #91d6be;
+  color: #3f6155;
+  border-bottom: 1px solid #6c9c8c;
+}
+
+.coordinate-input:focus {
+  background-color: #bde2d5;
+}
+
+.line {
+  height: 2px;
+  width: 200px;
+  position: absolute;
+  left: 150px;
+  top: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e4e4e;
+  transform-origin: top left;
+}
+
+.distance {
+  background-color: #4e4e4e;
+  width: 50px;
+  color: #FFF;
+  padding: 10px;
+  border-radius: 10px;
+}
