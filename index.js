@@ -67,7 +67,7 @@ for (let coordinate_input of get_all(".coordinate-input")) {
 }
 
 get(".distance").addEventListener("change", function () {
-  distance = this.value;
+  distance = this.value < 0 ? 0 : this.value;
 
   const angle_sin = Math.abs(Math.sin(angle));
   // if circle 1 is on the left
